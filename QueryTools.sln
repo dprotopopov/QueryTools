@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySql.QueryTools.WebApp", "MySql.QueryTools.WebApp\MySql.QueryTools.WebApp.csproj", "{0154EEF8-12D2-47AC-9FE8-1106FBF7A450}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AstraUtils", "AstraUtils\AstraUtils.csproj", "{750359DF-5C24-400A-BCDF-0633B3C6FB4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9CAC5677-8357-4E2B-8D9B-76F43F0B211F}"
+	ProjectSection(SolutionItems) = preProject
+		.env = .env
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0154EEF8-12D2-47AC-9FE8-1106FBF7A450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0154EEF8-12D2-47AC-9FE8-1106FBF7A450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0154EEF8-12D2-47AC-9FE8-1106FBF7A450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0154EEF8-12D2-47AC-9FE8-1106FBF7A450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750359DF-5C24-400A-BCDF-0633B3C6FB4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750359DF-5C24-400A-BCDF-0633B3C6FB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750359DF-5C24-400A-BCDF-0633B3C6FB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750359DF-5C24-400A-BCDF-0633B3C6FB4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63A4095C-5515-4E4A-95F4-B9966670A4C2}
+	EndGlobalSection
+EndGlobal
