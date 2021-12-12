@@ -1,0 +1,44 @@
+﻿version: "3.9"
+networks:
+  querytools:
+    name: querytools_dev
+    driver: bridge 
+
+services:
+  manticore:
+    container_name: manticore
+    image: manticoresearch/manticore
+    restart: always
+    expose:
+      - "9306"
+      - "9308"
+    ulimits:
+      nproc: 65535
+      nofile:
+         soft: 65535
+         hard: 65535
+      memlock:
+        soft: -1
+        hard: -1
+    networks:
+      - querytools
+
+  mysqlquerytools:
+    container_name: mysqlquerytools
+    build:
+      context: .
+      dockerfile: MySql.QueryTools.WebApp/Dockerfile
+    ports:
+      - "9090:9090"
+      - "9433:9433"
+    depends_on:
+      - manticore
+    restart: always
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__SphinxConnection: "Host=manticore;Port=9306;Command Timeout=0"
+      ServerConfig__BasePath: "/mysql"
+      Kestrel__Endpoints__Http__Url: http://0.0.0.0:9090
+      Kestrel__Endpoints__Https__Url: http://0.0.0.0:9433
+    networks:
+      - querytools
