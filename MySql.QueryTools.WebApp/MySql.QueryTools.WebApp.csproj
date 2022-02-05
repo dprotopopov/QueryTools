@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <TargetFramework>net6.0</TargetFramework>
     <UserSecretsId>8cc8e3f5-2bed-4544-83dc-4885081e7fcc</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
-    <PackageReference Include="MySql.Data" Version="8.0.27" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.28" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AstraUtils\AstraUtils.csproj" />
