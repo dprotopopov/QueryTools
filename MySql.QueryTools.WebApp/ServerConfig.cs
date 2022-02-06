@@ -1,7 +1,6 @@
-﻿namespace MySql.QueryTools.WebApp
+﻿namespace MySql.QueryTools.WebApp;
+
+public class ServerConfig
 {
-    public class ServerConfig
-    {
-        public string PathBase { get; set; }
-    }
+    public string PathBase { get; set; }
 }
