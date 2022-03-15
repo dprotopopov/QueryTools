@@ -1,6 +1,8 @@
-﻿namespace MySql.QueryTools.WebApp;
-
-public class ServerConfig
+﻿namespace MySql.QueryTools.WebApp
 {
-    public string PathBase { get; set; }
+    public class ServerConfig
+    {
+        public string PathBase { get; set; }
+        public bool AddCors { get; set; }
+    }
 }
