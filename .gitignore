@@ -117,5 +117,4 @@ WebUI/Content/Images/bg.png
 #Data/Migrations/*
 .idea
 
-Visary.Reporting.WebApi/App_Data/Reports/
 ProtectionKeys/
